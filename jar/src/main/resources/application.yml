@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: thirdJar
+  datasource:
+    url: jdbc:mysql://192.168.0.221:3306/jar_pool?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&nullNamePatternMatchesAll=true&autoReconnect=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  security:
+    user:
+      name: name
+      password: password
+server:
+  port: 9999
